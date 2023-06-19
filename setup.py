@@ -31,9 +31,6 @@ INSTALL_REQUIRES = [
     'dataclasses',
     'einops',
     'ml_collections',
-    'e3nn-jax',
-    'dm-haiku',
-    'optax',
 ]
 
 setuptools.setup(
