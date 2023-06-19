@@ -30,7 +30,6 @@ INSTALL_REQUIRES = [
     'jraph',
     'dataclasses',
     'einops',
-    'ml_collections',
 ]
 
 setuptools.setup(
