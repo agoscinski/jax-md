@@ -24,16 +24,12 @@ with io.open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 INSTALL_REQUIRES = [
     'absl-py',
     'numpy',
-    'jax',
-    'jaxlib',
+    'jax<0.4.7',
+    'jaxlib<0.4.7',
     'flax',
     'jraph',
     'dataclasses',
     'einops',
-    'ml_collections',
-    'e3nn-jax',
-    'dm-haiku',
-    'optax',
 ]
 
 setuptools.setup(
@@ -56,8 +52,11 @@ setuptools.setup(
     description='Differentiable, Hardware Accelerated, Molecular Dynamics',
     python_requires='>=2.7',
     classifiers=[
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: MacOS',
         'Operating System :: POSIX :: Linux',
