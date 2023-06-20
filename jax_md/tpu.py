@@ -46,7 +46,7 @@ from jax import lax
 from jax import random
 from jax.experimental import maps
 from jax.experimental import mesh_utils
-from jax.experimental import PartitionSpec as P
+from jax.sharding import PartitionSpec as P
 from jax.experimental.global_device_array import GlobalDeviceArray
 
 import jax.numpy as np
